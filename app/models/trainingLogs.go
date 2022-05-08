@@ -67,3 +67,28 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 	return trainingLogs, err
 
 }
+
+func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
+	cmd := `select id, content, user_id, created_at from trainingLogs where user_id = ?`
+	rows, err := Db.Query(cmd, u.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	for rows.Next() {
+		var trainingLog TrainingLog
+		err = rows.Scan(
+			&trainingLog.ID,
+			&trainingLog.Content,
+			&trainingLog.UserID,
+			&trainingLog.CreatedAt)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		trainingLogs = append(trainingLogs, trainingLog)
+	}
+
+	rows.Close()
+
+	return trainingLogs, err
+}

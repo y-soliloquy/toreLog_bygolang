@@ -24,8 +24,8 @@ func main() {
 
 	// ユーザーを作成する
 	// u := &models.User{}
-	// u.Name = "test"
-	// u.Email = "test@example.com"
+	// u.Name = "test3"
+	// u.Email = "test3@example.com"
 	// u.PassWord = "testtest"
 	// fmt.Println(u)
 
@@ -53,15 +53,22 @@ func main() {
 	/**************************************************************************************/
 
 	// トレーニングログを作成する
-	user, _ := models.GetUser(2)
-	user.CreateTrainingLog("トレログ2")
+	// user, _ := models.GetUser(3)
+	// user.CreateTrainingLog("トレログ3-2")
 
 	// トレーニングログを取得する（単数）
 	// t, _ := models.GetTrainingLog(1)
 	// fmt.Println(t)
 
 	// トレーニングログを取得する（複数）
-	trainingLogs, _ := models.GetTrainingLogs()
+	// trainingLogs, _ := models.GetTrainingLogs()
+	// for _, v := range trainingLogs {
+	// 	fmt.Println(v)
+	// }
+
+	// ユーザーを絞ってトレーニングログを取得する
+	user2, _ := models.GetUser(3)
+	trainingLogs, _ := user2.GetTrainingLogsByUser()
 	for _, v := range trainingLogs {
 		fmt.Println(v)
 	}
