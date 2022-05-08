@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	fmt.Println(models.Db)
 	// fmt.Println(config.Config.Port)
 	// fmt.Println(config.Config.SQLDriver)
 	// fmt.Println(config.Config.DbName)
@@ -27,19 +28,19 @@ func main() {
 	// u.CreateUser()
 
 	// 作成されたユーザー情報を取得する
-	u, _ := models.GetUser(1)
-	fmt.Println(u)
+	// u, _ := models.GetUser(1)
+	// fmt.Println(u)
 
 	// ユーザー情報を更新する
-	u.Name = "test2"
-	u.Email = "test2@example.com"
-	u.UpdateUser()
+	// u.Name = "test2"
+	// u.Email = "test2@example.com"
+	// u.UpdateUser()
 
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
 
 	//　ユーザー情報を削除する
-	u.DeleteUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	// u.DeleteUser()
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
 }
