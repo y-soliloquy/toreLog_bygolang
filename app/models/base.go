@@ -16,7 +16,8 @@ var Db *sql.DB
 var err error
 
 const (
-	tableNameUser = "users"
+	tableNameUser        = "users"
+	tableNameTrainingLog = "trainingLogs"
 )
 
 func init() {
@@ -35,6 +36,14 @@ func init() {
 		created_at DATETIME)`, tableNameUser)
 
 	Db.Exec(cmdU)
+
+	cmdT := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		content TEXT,
+		user_id INTEGER,
+		created_at DATETIME)`, tableNameTrainingLog)
+
+	Db.Exec(cmdT)
 
 }
 
