@@ -37,6 +37,7 @@ func (u *User) CreateUser() (err error) {
 	return err
 }
 
+// ユーザー情報を取得
 func GetUser(id int) (user User, err error) {
 	user = User{}
 	cmd := `select id, uuid, name, email, password, created_at from users where id = ?`
@@ -50,4 +51,15 @@ func GetUser(id int) (user User, err error) {
 	)
 
 	return user, err
+}
+
+// ユーザー情報を更新
+func (u *User) UpdateUser() (err error) {
+	cmd := `update users set name = ?, email = ? where id = ?`
+	_, err = Db.Exec(cmd, u.Name, u.Email, u.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	return err
 }

@@ -29,4 +29,12 @@ func main() {
 	// 作成されたユーザー情報を取得する
 	u, _ := models.GetUser(1)
 	fmt.Println(u)
+
+	// ユーザー情報を更新する
+	u.Name = "test2"
+	u.Email = "test2@example.com"
+	u.UpdateUser()
+
+	u, _ = models.GetUser(1)
+	fmt.Println(u)
 }
