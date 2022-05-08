@@ -67,10 +67,14 @@ func main() {
 	// }
 
 	// ユーザーを絞ってトレーニングログを取得する
-	user2, _ := models.GetUser(3)
-	trainingLogs, _ := user2.GetTrainingLogsByUser()
-	for _, v := range trainingLogs {
-		fmt.Println(v)
-	}
+	// user2, _ := models.GetUser(3)
+	// trainingLogs, _ := user2.GetTrainingLogsByUser()
+	// for _, v := range trainingLogs {
+	// 	fmt.Println(v)
+	// }
 
+	// トレーニングログ情報を更新する
+	t, _ := models.GetTrainingLog(1)
+	t.Content = "更新トレログ"
+	t.UpdateTrainingLog()
 }

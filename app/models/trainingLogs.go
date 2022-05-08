@@ -28,7 +28,7 @@ func (u *User) CreateTrainingLog(content string) (err error) {
 
 }
 
-// トレーニングログ情報を取得
+// トレーニングログ情報を取得（単数）
 func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
 	cmd := `select id, content, user_id, created_at from trainingLogs where id = ?`
 	trainingLog = TrainingLog{}
@@ -42,6 +42,7 @@ func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
 	return trainingLog, err
 }
 
+// トレーニングログ情報を取得（複数）
 func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 	cmd := `select id, content, user_id, created_at from trainingLogs`
 	rows, err := Db.Query(cmd)
@@ -68,6 +69,7 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 
 }
 
+// ユーザーIDで絞り込んでトレーニングログ情報を取得
 func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
 	cmd := `select id, content, user_id, created_at from trainingLogs where user_id = ?`
 	rows, err := Db.Query(cmd, u.ID)
@@ -91,4 +93,15 @@ func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
 	rows.Close()
 
 	return trainingLogs, err
+}
+
+// トレーニングログ情報を更新
+func (t *TrainingLog) UpdateTrainingLog() (err error) {
+	cmd := `update trainingLogs set content = ?, user_id =? where id = ?`
+	_, err = Db.Exec(cmd, t.Content, t.UserID, t.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+
 }
