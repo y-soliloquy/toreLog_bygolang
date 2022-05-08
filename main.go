@@ -15,13 +15,18 @@ func main() {
 	// log.Println("test")
 
 	// ユーザーのテーブルが作れているか
-	fmt.Println(models.Db)
+	// fmt.Println(models.Db)
 
-	u := &models.User{}
-	u.Name = "test"
-	u.Email = "test@example.com"
-	u.PassWord = "testtest"
+	// ユーザーを作成する
+	// u := &models.User{}
+	// u.Name = "test"
+	// u.Email = "test@example.com"
+	// u.PassWord = "testtest"
+	// fmt.Println(u)
+
+	// u.CreateUser()
+
+	// 作成されたユーザー情報を取得する
+	u, _ := models.GetUser(1)
 	fmt.Println(u)
-
-	u.CreateUser()
 }
