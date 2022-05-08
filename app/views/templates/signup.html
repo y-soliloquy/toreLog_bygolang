@@ -1,0 +1,11 @@
+{{define "content"}}
+<h1>サインアップ</h1>
+<form role="form" action="/signup" method="POST">
+    <h2>トレログ</h2>
+    <div>ユーザー登録</div>
+    <input id="name" type="text" name="name" class="form-control" placeholder="お名前" requred autofocus>
+    <input type="email" name="name" class="form-control" placeholder="Email" requred autofocus>
+    <input type="password" name="password" class="form-control" placeholder="パスワード" requred autofocus>
+    <button type="submit" class="btn-lg btn-primary btn-block">登録</button>
+</form>
+{{end}}
