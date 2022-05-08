@@ -105,3 +105,13 @@ func (t *TrainingLog) UpdateTrainingLog() (err error) {
 	return err
 
 }
+
+// トレーニングログ情報を削除
+func (t *TrainingLog) DeleteTrainingLog() (err error) {
+	cmd := `delete from trainingLogs where id = ?`
+	_, err = Db.Exec(cmd, t.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+}

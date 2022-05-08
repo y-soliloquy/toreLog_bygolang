@@ -74,7 +74,12 @@ func main() {
 	// }
 
 	// トレーニングログ情報を更新する
-	t, _ := models.GetTrainingLog(1)
-	t.Content = "更新トレログ"
-	t.UpdateTrainingLog()
+	// t, _ := models.GetTrainingLog(1)
+	// t.Content = "更新トレログ"
+	// t.UpdateTrainingLog()
+
+	// トレーニングログ情報を削除する
+	t, _ := models.GetTrainingLog(3)
+	t.DeleteTrainingLog()
+
 }
