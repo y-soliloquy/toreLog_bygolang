@@ -27,3 +27,17 @@ func (u *User) CreateTrainingLog(content string) (err error) {
 	return err
 
 }
+
+// トレーニングログ情報を取得
+func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
+	cmd := `select id, content, user_id, created_at from trainingLogs where id = ?`
+	trainingLog = TrainingLog{}
+	err = Db.QueryRow(cmd, id).Scan(
+		&trainingLog.ID,
+		&trainingLog.Content,
+		&trainingLog.UserID,
+		&trainingLog.CreatedAt,
+	)
+
+	return trainingLog, err
+}
