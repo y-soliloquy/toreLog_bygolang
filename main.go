@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"torelog_bygolang/app/controllers"
 	"torelog_bygolang/app/models"
 )
 
@@ -79,7 +80,13 @@ func main() {
 	// t.UpdateTrainingLog()
 
 	// トレーニングログ情報を削除する
-	t, _ := models.GetTrainingLog(3)
-	t.DeleteTrainingLog()
+	// t, _ := models.GetTrainingLog(3)
+	// t.DeleteTrainingLog()
 
+	/**************************************************************************************/
+	//	サーバー周り																　//
+	/**************************************************************************************/
+
+	// サーバーの立ち上げ
+	controllers.StartMainServer()
 }
