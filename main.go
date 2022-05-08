@@ -53,11 +53,17 @@ func main() {
 	/**************************************************************************************/
 
 	// トレーニングログを作成する
-	// user, _ := models.GetUser(2)
-	// user.CreateTrainingLog("トレログ1")
+	user, _ := models.GetUser(2)
+	user.CreateTrainingLog("トレログ2")
 
-	// トレーニングログを取得する
-	t, _ := models.GetTrainingLog(1)
-	fmt.Println(t)
+	// トレーニングログを取得する（単数）
+	// t, _ := models.GetTrainingLog(1)
+	// fmt.Println(t)
+
+	// トレーニングログを取得する（複数）
+	trainingLogs, _ := models.GetTrainingLogs()
+	for _, v := range trainingLogs {
+		fmt.Println(v)
+	}
 
 }
