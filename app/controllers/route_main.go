@@ -3,6 +3,7 @@ package controllers
 import (
 	"log"
 	"net/http"
+	"torelog_bygolang/app/models"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
@@ -57,5 +58,22 @@ func trainingLogSave(w http.ResponseWriter, r *http.Request) {
 			log.Fatalln(err)
 		}
 		http.Redirect(w, r, "/trainingLog", 302)
+	}
+}
+
+func trainingLogEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Fatalln(err)
+		}
+		t, err := models.GetTrainingLog(id)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		generateHTML(w, t, "layout", "private_navbar", "trainingLog_edit")
 	}
 }
