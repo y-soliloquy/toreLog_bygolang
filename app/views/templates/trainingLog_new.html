@@ -1,0 +1,11 @@
+{{define "content"}}
+<form role="form" action="/trainingLogs/save" method="POST">
+    <div>ログ作成</div>
+    <div>
+        <textarea class="form-control" name="content" id="content" cols="30" rows="10" placeholder="ログを追加"></textarea>
+        <br/>
+        <br >
+        <button class="btn-lg btn-primary pull-right" type="submit">作成</button>
+    </div>
+</form>
+{{end}}

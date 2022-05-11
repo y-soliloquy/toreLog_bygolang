@@ -29,3 +29,33 @@ func index(w http.ResponseWriter, r *http.Request) {
 		generateHTML(w, user, "layout", "private_navbar", "index")
 	}
 }
+
+func trainingLogNew(w http.ResponseWriter, r *http.Request) {
+	_, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		generateHTML(w, nil, "layout", "private_navbar", "trainingLog_new")
+	}
+}
+
+func trainingLogSave(w http.ResponseWriter, r *http.Request) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		err = r.ParseForm()
+		if err != nil {
+			log.Fatalln(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Fatalln(err)
+		}
+		content := r.PostFormValue("content")
+		if err := user.CreateTrainingLog(content); err != nil {
+			log.Fatalln(err)
+		}
+		http.Redirect(w, r, "/trainingLog", 302)
+	}
+}

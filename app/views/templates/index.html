@@ -1,6 +1,7 @@
 {{define "content"}}
 ユーザーネーム：{{.Name}}
 <h1>トレログ</h1>
+<p><a href="/trainingLogs/new">ログ作成</a></p>
 <hr>
 {{range .TrainingLogs}}
 <div>{{.Content}}</div>
