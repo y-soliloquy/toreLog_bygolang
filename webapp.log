@@ -3,3 +3,4 @@
 2022/05/08 20:31:15 users.go:61: near "where": syntax error
 2022/05/08 21:19:51 trainingLogs.go:24: 4 values for 3 columns
 2022/05/08 21:33:00 trainingLogs.go:42: no such column: if
+2022/05/11 17:19:57 main.go:98: no such column: emai

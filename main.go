@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"torelog_bygolang/app/models"
 )
 
@@ -91,5 +92,11 @@ func main() {
 
 	user, _ := models.GetUserByEmail("posttest@example.com")
 	fmt.Println(user)
+
+	session, err := user.CreateSession()
+	if err != nil {
+		log.Fatalln(err)
+	}
+	fmt.Println(session)
 
 }
