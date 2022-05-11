@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"torelog_bygolang/app/controllers"
 	"torelog_bygolang/app/models"
 )
 
@@ -88,5 +87,9 @@ func main() {
 	/**************************************************************************************/
 
 	// サーバーの立ち上げ
-	controllers.StartMainServer()
+	// controllers.StartMainServer()
+
+	user, _ := models.GetUserByEmail("posttest@example.com")
+	fmt.Println(user)
+
 }
