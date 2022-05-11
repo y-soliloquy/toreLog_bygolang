@@ -1,3 +1,8 @@
 {{define "content"}}
-<h1>index</h1>
+ユーザーネーム：{{.Name}}
+<h1>トレログ</h1>
+<hr>
+{{range .TrainingLogs}}
+<div>{{.Content}}</div>
+{{end}}
 {{end}}

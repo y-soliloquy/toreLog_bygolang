@@ -3,7 +3,6 @@ package controllers
 import (
 	"log"
 	"net/http"
-	"torelog_bygolang/app/models"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
@@ -17,23 +16,16 @@ func top(w http.ResponseWriter, r *http.Request) {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	_, err := session(w, r)
+	sess, err := session(w, r)
 	if err != nil {
 		http.Redirect(w, r, "/", 302)
 	} else {
-		generateHTML(w, nil, "layout", "private_navbar", "index")
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Fatalln(err)
+		}
+		trainingLogs, _ := user.GetTrainingLogsByUser()
+		user.TrainingLogs = trainingLogs
+		generateHTML(w, user, "layout", "private_navbar", "index")
 	}
-}
-
-func logout(w http.ResponseWriter, r *http.Request) {
-	cookie, err := r.Cookie("_cookie")
-	if err != nil {
-		log.Fatalln(err)
-	}
-	if err != http.ErrNoCookie {
-		session := models.Session{UUID: cookie.Value}
-		session.DeleteSessionByUUID()
-	}
-
-	http.Redirect(w, r, "/login", 302)
 }
