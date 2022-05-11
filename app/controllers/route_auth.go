@@ -40,7 +40,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 		// view表示時
 		generateHTML(w, nil, "layout", "navbar", "login")
 	} else {
-		http.Redirect(w, r, "trainingLog", 302)
+		http.Redirect(w, r, "/trainingLog", 302)
 	}
 }
 

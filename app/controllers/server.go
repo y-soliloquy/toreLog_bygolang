@@ -22,7 +22,7 @@ func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) 
 // クッキーを取得する
 func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err error) {
 	cookie, err := r.Cookie("_cookie")
-	if err != nil {
+	if err == nil {
 		sess = models.Session{UUID: cookie.Value}
 		if ok, _ := sess.CheckSession(); !ok {
 			err = fmt.Errorf("無効なセッション")
@@ -41,5 +41,6 @@ func StartMainServer() (err error) {
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/authenticate", authenticate)
 	http.HandleFunc("/trainingLog", index)
+	http.HandleFunc("/logout", logout)
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
