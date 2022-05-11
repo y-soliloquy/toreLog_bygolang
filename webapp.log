@@ -4,3 +4,6 @@
 2022/05/08 21:19:51 trainingLogs.go:24: 4 values for 3 columns
 2022/05/08 21:33:00 trainingLogs.go:42: no such column: if
 2022/05/11 17:19:57 main.go:98: no such column: emai
+2022/05/11 21:13:43 route_auth.go:40: sql: no rows in result set
+2022/05/11 21:15:07 route_auth.go:40: sql: no rows in result set
+2022/05/11 21:29:13 route_auth.go:51: sql: no rows in result set

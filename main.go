@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"log"
+	"torelog_bygolang/app/controllers"
 	"torelog_bygolang/app/models"
 )
 
@@ -84,25 +84,29 @@ func main() {
 	// t.DeleteTrainingLog()
 
 	/**************************************************************************************/
-	//	サーバー周り																　//
+	//	サーバー周り																　		 //
 	/**************************************************************************************/
 
 	// サーバーの立ち上げ
-	// controllers.StartMainServer()
+	controllers.StartMainServer()
+
+	/**************************************************************************************/
+	//	セッション周り																　		 //
+	/**************************************************************************************/
 
 	// emailからユーザー情報を取得する
-	user, _ := models.GetUserByEmail("posttest@example.com")
-	fmt.Println(user)
+	// user, _ := models.GetUserByEmail("posttest@example.com")
+	// fmt.Println(user)
 
 	// セッションを作成する
-	session, err := user.CreateSession()
-	if err != nil {
-		log.Fatalln(err)
-	}
-	fmt.Println(session)
+	// session, err := user.CreateSession()
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+	// fmt.Println(session)
 
 	// セッションの有無をチェックする
-	valid, _ := session.CheckSession()
-	fmt.Println(valid)
+	// valid, _ := session.CheckSession()
+	// fmt.Println(valid)
 
 }
