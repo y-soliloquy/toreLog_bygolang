@@ -1,0 +1,12 @@
+{{define "content"}}
+<h1 class="text-center">login</h1>
+<form role="form" action="/authenticate" method="post">
+  <h2>トレログ</h2>
+  <input type="email" name="email" class="form-control" placeholder="Email" required autofocus>
+  <input type="password" name="password" class="form-control" placeholder="パスワード">
+  <br/>
+  <button class="btn-lg btn-primary btn-block" type="submit">ログイン</button>
+  <br/>
+  <a class="lead pull-right" href="/signup">登録</a>
+</form>
+{{end}}
