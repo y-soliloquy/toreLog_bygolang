@@ -120,3 +120,23 @@ func (u *User) CreateSession() (session Session, err error) {
 
 	return session, err
 }
+
+// セッションが存在するかどうかチェックする
+func (sess *Session) CheckSession() (valid bool, err error) {
+	cmd := `select id, uuid, email, user_id, created_at from sessions where uuid = ?`
+	Db.QueryRow(cmd, sess.UUID).Scan(
+		&sess.ID,
+		&sess.UUID,
+		&sess.Email,
+		&sess.UserID,
+		&sess.CreatedAt)
+	if err != nil {
+		valid = false
+		return
+	}
+	if sess.ID != 0 {
+		valid = true
+	}
+
+	return valid, err
+}

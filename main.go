@@ -90,13 +90,19 @@ func main() {
 	// サーバーの立ち上げ
 	// controllers.StartMainServer()
 
+	// emailからユーザー情報を取得する
 	user, _ := models.GetUserByEmail("posttest@example.com")
 	fmt.Println(user)
 
+	// セッションを作成する
 	session, err := user.CreateSession()
 	if err != nil {
 		log.Fatalln(err)
 	}
 	fmt.Println(session)
+
+	// セッションの有無をチェックする
+	valid, _ := session.CheckSession()
+	fmt.Println(valid)
 
 }
