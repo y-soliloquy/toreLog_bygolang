@@ -38,7 +38,7 @@ var validPath = regexp.MustCompile("^/trainingLogs/(edit|update)/([0-9]+$)")
 
 func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		// trainingLogs/edit/3
+		// trainingLogs/edit/2
 		q := validPath.FindStringSubmatch((r.URL.Path))
 		if q == nil {
 			http.NotFound(w, r)
@@ -62,10 +62,11 @@ func StartMainServer() (err error) {
 	http.HandleFunc("/signup", signup)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/authenticate", authenticate)
-	http.HandleFunc("/trainingLog", index)
+	http.HandleFunc("/trainingLogs", index)
 	http.HandleFunc("/logout", logout)
 	http.HandleFunc("/trainingLogs/new", trainingLogNew)
 	http.HandleFunc("/trainingLogs/save", trainingLogSave)
 	http.HandleFunc("/trainingLogs/edit/", parseURL(trainingLogEdit))
+	http.HandleFunc("/trainingLogs/update/", parseURL(trainingLogUpdate))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }

@@ -57,7 +57,7 @@ func trainingLogSave(w http.ResponseWriter, r *http.Request) {
 		if err := user.CreateTrainingLog(content); err != nil {
 			log.Fatalln(err)
 		}
-		http.Redirect(w, r, "/trainingLog", 302)
+		http.Redirect(w, r, "/trainingLogs", 302)
 	}
 }
 
@@ -75,5 +75,27 @@ func trainingLogEdit(w http.ResponseWriter, r *http.Request, id int) {
 			log.Fatalln(err)
 		}
 		generateHTML(w, t, "layout", "private_navbar", "trainingLog_edit")
+	}
+}
+
+func trainingLogUpdate(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		err := r.ParseForm()
+		if err != nil {
+			log.Fatalln(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Fatalln(err)
+		}
+		content := r.PostFormValue("content")
+		t := &models.TrainingLog{ID: id, Content: content, UserID: user.ID}
+		if err := t.UpdateTrainingLog(); err != nil {
+			log.Fatalln(err)
+		}
+		http.Redirect(w, r, "/trainingLogs", 302)
 	}
 }
