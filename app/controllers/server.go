@@ -34,7 +34,7 @@ func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err e
 	return sess, err
 }
 
-var validPath = regexp.MustCompile("^/trainingLogs/(edit|update)/([0-9]+$)")
+var validPath = regexp.MustCompile("^/trainingLogs/(edit|update|delete)/([0-9]+$)")
 
 func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -68,5 +68,6 @@ func StartMainServer() (err error) {
 	http.HandleFunc("/trainingLogs/save", trainingLogSave)
 	http.HandleFunc("/trainingLogs/edit/", parseURL(trainingLogEdit))
 	http.HandleFunc("/trainingLogs/update/", parseURL(trainingLogUpdate))
+	http.HandleFunc("/trainingLogs/delete/", parseURL(trainingLogDelete))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
