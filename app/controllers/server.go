@@ -3,6 +3,8 @@ package controllers
 import (
 	"fmt"
 	"net/http"
+	"regexp"
+	"strconv"
 	"text/template"
 	"torelog_bygolang/app/models"
 	"torelog_bygolang/config"
@@ -32,6 +34,26 @@ func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err e
 	return sess, err
 }
 
+var validPath = regexp.MustCompile("^/trainingLogs/(edit|update|delete)/([0-9]+$)")
+
+func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		// trainingLogs/edit/2
+		q := validPath.FindStringSubmatch((r.URL.Path))
+		if q == nil {
+			http.NotFound(w, r)
+			return
+		}
+		qi, err := strconv.Atoi(q[2])
+		if err != nil {
+			http.NotFound(w, r)
+			return
+		}
+
+		fn(w, r, qi)
+	}
+}
+
 // サーバーの設定
 func StartMainServer() (err error) {
 	files := http.FileServer(http.Dir(config.Config.Static))
@@ -40,7 +62,12 @@ func StartMainServer() (err error) {
 	http.HandleFunc("/signup", signup)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/authenticate", authenticate)
-	http.HandleFunc("/trainingLog", index)
+	http.HandleFunc("/trainingLogs", index)
 	http.HandleFunc("/logout", logout)
+	http.HandleFunc("/trainingLogs/new", trainingLogNew)
+	http.HandleFunc("/trainingLogs/save", trainingLogSave)
+	http.HandleFunc("/trainingLogs/edit/", parseURL(trainingLogEdit))
+	http.HandleFunc("/trainingLogs/update/", parseURL(trainingLogUpdate))
+	http.HandleFunc("/trainingLogs/delete/", parseURL(trainingLogDelete))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
