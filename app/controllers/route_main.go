@@ -94,7 +94,9 @@ func trainingLogUpdate(w http.ResponseWriter, r *http.Request, id int) {
 			log.Fatalln(err)
 		}
 		content := r.PostFormValue("content")
-		t := &models.TrainingLog{ID: id, Content: content, UserID: user.ID}
+		satisfaction := r.PostFormValue("satisfaction")
+		weather := r.PostFormValue("weather")
+		t := &models.TrainingLog{ID: id, Content: content, Satisfaction: satisfaction, Weather: weather, UserID: user.ID}
 		if err := t.UpdateTrainingLog(); err != nil {
 			log.Fatalln(err)
 		}

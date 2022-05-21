@@ -110,8 +110,8 @@ func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
 
 // トレーニングログ情報を更新
 func (t *TrainingLog) UpdateTrainingLog() (err error) {
-	cmd := `update trainingLogs set content = ?, user_id =? where id = ?`
-	_, err = Db.Exec(cmd, t.Content, t.UserID, t.ID)
+	cmd := `update trainingLogs set content = ?, satisfaction = ?, weather = ?, user_id =? where id = ?`
+	_, err = Db.Exec(cmd, t.Content, t.Satisfaction, t.Weather, t.UserID, t.ID)
 	if err != nil {
 		log.Fatalln(err)
 	}

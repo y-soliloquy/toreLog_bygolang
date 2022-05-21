@@ -5,7 +5,7 @@
         <textarea class="form-control" name="content" id="" cols="30" rows="10">{{.Content}}</textarea>
         <br />
         <select name="satisfaction" id="satisfaction">
-            <option value="">{{.Satisfaction}}</option>
+            <option value={{.Satisfaction}}>{{.Satisfaction}}</option>
             <option value="大満足">かなり満足</option>
             <option value="満足">満足</option>
             <option value="普通">普通</option>
@@ -14,7 +14,7 @@
         </select>
         <br/>
         <select name="weather" id="weather">
-            <option value="">{{.Weather}}</option>
+            <option value="{{.Weather}}">{{.Weather}}</option>
             <option value="晴れ">晴れ</option>
             <option value="曇り">曇り</option>
             <option value="雨">雨</option>
