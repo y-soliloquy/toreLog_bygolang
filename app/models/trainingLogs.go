@@ -21,7 +21,10 @@ func (u *User) CreateTrainingLog(content string, satisfaction string) (err error
 		user_id,
 		created_at) values (?, ?, ?, ?)`
 
-	_, err = Db.Exec(cmd, content, satisfaction, u.ID, time.Now())
+	// 書式指定
+	const format = "2006-01-02 15:04:05"
+
+	_, err = Db.Exec(cmd, content, satisfaction, u.ID, time.Now().Format(format))
 	if err != nil {
 		log.Fatalln(err)
 	}
