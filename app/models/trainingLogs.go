@@ -9,22 +9,24 @@ type TrainingLog struct {
 	ID           int
 	Content      string
 	Satisfaction string
+	Weather      string
 	UserID       int
 	CreatedAt    time.Time
 }
 
 // trainingLogsテーブルにトレーニングログを作成
-func (u *User) CreateTrainingLog(content string, satisfaction string) (err error) {
+func (u *User) CreateTrainingLog(content string, satisfaction string, weather string) (err error) {
 	cmd := `insert into trainingLogs (
 		content,
 		satisfaction,
+		weather,
 		user_id,
-		created_at) values (?, ?, ?, ?)`
+		created_at) values (?, ?, ?, ?, ?)`
 
 	// 書式指定
 	const format = "2006-01-02 15:04:05"
 
-	_, err = Db.Exec(cmd, content, satisfaction, u.ID, time.Now().Format(format))
+	_, err = Db.Exec(cmd, content, satisfaction, weather, u.ID, time.Now().Format(format))
 	if err != nil {
 		log.Fatalln(err)
 	}

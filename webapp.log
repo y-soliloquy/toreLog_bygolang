@@ -1896,3 +1896,7 @@ net/http.(*conn).serve(0x140002e6000, {0x104aea908, 0x1400007f3e0})
 	/usr/local/go/src/net/http/server.go:1966 +0x56c
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 03:39:00 trainingLogs.go:31: table trainingLogs has no column named weather
+2022/05/22 03:39:58 route_auth.go:51: sql: no rows in result set
+2022/05/22 03:40:50 trainingLogs.go:31: table trainingLogs has no column named weather
+2022/05/22 03:43:02 trainingLogs.go:31: table trainingLogs has no column named weather
