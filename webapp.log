@@ -1742,3 +1742,157 @@ created by net/http.(*Server).Serve
 2022/05/22 01:06:13 trainingLogs.go:26: table trainingLogs has no column named satisfaction
 2022/05/22 01:07:27 route_auth.go:51: sql: no rows in result set
 2022/05/22 01:08:15 trainingLogs.go:26: not enough args to execute query: want 4 got 3
+2022/05/22 01:47:58 server.go:3197: http: panic serving [::1]:52620: template: index.html:9: unexpected "(" in operand
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000903f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140000b2000}, {0x104ace780, 0x140000be200}, {0x140001197d0?, 0x3, 0x140001877c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140000b2000}, 0x14000187a3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140000b2000?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140000b2000}, 0x14000098000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e030?}, {0x104aea680, 0x140000b2000}, 0x14000098000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117040, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:58 server.go:3197: http: panic serving [::1]:52621: template: index.html:9: unexpected "(" in operand
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140001923e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001ac000}, {0x104ace780, 0x140001b6200}, {0x1400011f7d0?, 0x3, 0x1400011f7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001ac000}, 0x1400011fa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001ac000?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001ac000}, 0x14000156200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f530?}, {0x104aea680, 0x140001ac000}, 0x14000156200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001170e0, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:58 server.go:3197: http: panic serving [::1]:52622: template: index.html:9: unexpected "(" in operand
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000134c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001600e0}, {0x104ace780, 0x1400015e700}, {0x140001757d0?, 0x3, 0x1400005a7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001600e0}, 0x1400005aa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001600e0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001600e0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f650?}, {0x104aea680, 0x140001600e0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117180, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:59 server.go:3197: http: panic serving [::1]:52628: template: index.html:9: unexpected "(" in operand
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x1400029e3d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140002a2000}, {0x104ace780, 0x140002ae200}, {0x140001717d0?, 0x3, 0x1400005f7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140002a2000}, 0x1400005fa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140002a2000?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140002a2000}, 0x14000156600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400020c360?}, {0x104aea680, 0x140002a2000}, 0x14000156600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117220, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:59 server.go:3197: http: panic serving [::1]:52629: template: index.html:9: unexpected "(" in operand
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140001927d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001ac0e0}, {0x104ace780, 0x140001b6680}, {0x1400011f7d0?, 0x3, 0x1400005a7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001ac0e0}, 0x1400005aa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001ac0e0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001ac0e0}, 0x14000156500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400020c300?}, {0x104aea680, 0x140001ac0e0}, 0x14000156500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001172c0, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:59 server.go:3197: http: panic serving [::1]:52630: template: index.html:9: unexpected "(" in operand
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000904b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001ac1c0}, {0x104ace780, 0x140001b6b80}, {0x1400011f7d0?, 0x3, 0x1400005a7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001ac1c0}, 0x1400005aa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001ac1c0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001ac1c0}, 0x14000302000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018f7d0?}, {0x104aea680, 0x140001ac1c0}, 0x14000302000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000300000, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:48:04 server.go:3197: http: panic serving [::1]:52652: template: index.html:9: unexpected "(" in operand
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000908b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140000b20e0}, {0x104ace780, 0x140000be800}, {0x140001197d0?, 0x3, 0x140001877c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140000b20e0}, 0x14000187a3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140000b20e0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140000b20e0}, 0x14000098100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000096de0?}, {0x104aea680, 0x140000b20e0}, 0x14000098100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002e6000, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
