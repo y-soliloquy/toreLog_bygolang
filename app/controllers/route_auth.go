@@ -64,8 +64,7 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 		}
 		http.SetCookie(w, &cookie)
 
-		// 後で作成するページに遷移させたいが、今はとりあえずトップページに遷移させる
-		http.Redirect(w, r, "/", 302)
+		http.Redirect(w, r, "/trainingLogs", 302)
 	} else {
 		http.Redirect(w, r, "/login", 302)
 	}
