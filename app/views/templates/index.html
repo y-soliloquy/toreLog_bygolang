@@ -5,10 +5,14 @@
 <hr>
 {{range .TrainingLogs}}
 <div>{{.CreatedAt}}</div>
+<div style="display: flex; justify-content: center;">
+    <div style="width: 140px"><span>満足度：</span>{{.Satisfaction}}</div>
+    <div style="width: 140px"><span>天気：</span>{{.Weather}}</div>
+</div>
 <div>{{.Content}}</div>
-<div>{{.Satisfaction}}</div>
-<div>{{.Weather}}</div>
-<p>[<a href="/trainingLogs/edit/{{.ID}}">編集</a>]</p>
-<p>[<a href="/trainingLogs/delete/{{.ID}}">削除</a>]</p>
+<div style="display: flex; justify-content: center;">
+    <p style="margin: 0px 15px;">[<a href="/trainingLogs/edit/{{.ID}}">編集</a>]</p>
+    <p style="margin: 0px 15px;">[<a href="/trainingLogs/delete/{{.ID}}">削除</a>]</p>
+</div>
 {{end}}
 {{end}}
