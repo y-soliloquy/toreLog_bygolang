@@ -37,12 +37,13 @@ func (u *User) CreateTrainingLog(content string, satisfaction string, weather st
 
 // トレーニングログ情報を取得（単数）
 func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
-	cmd := `select id, content, satisfaction, user_id, created_at from trainingLogs where id = ?`
+	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs where id = ?`
 	trainingLog = TrainingLog{}
 	err = Db.QueryRow(cmd, id).Scan(
 		&trainingLog.ID,
 		&trainingLog.Content,
 		&trainingLog.Satisfaction,
+		&trainingLog.Weather,
 		&trainingLog.UserID,
 		&trainingLog.CreatedAt,
 	)
@@ -52,7 +53,7 @@ func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
 
 // トレーニングログ情報を取得（複数）
 func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
-	cmd := `select id, content, satisfaction, user_id, created_at from trainingLogs`
+	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs`
 	rows, err := Db.Query(cmd)
 	if err != nil {
 		log.Fatalln(err)
@@ -64,6 +65,7 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 			&trainingLog.ID,
 			&trainingLog.Content,
 			&trainingLog.Satisfaction,
+			&trainingLog.Weather,
 			&trainingLog.UserID,
 			&trainingLog.CreatedAt)
 		if err != nil {
@@ -80,7 +82,7 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 
 // ユーザーIDで絞り込んでトレーニングログ情報を取得
 func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
-	cmd := `select id, content, satisfaction, user_id, created_at from trainingLogs where user_id = ?`
+	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs where user_id = ?`
 	rows, err := Db.Query(cmd, u.ID)
 	if err != nil {
 		log.Fatalln(err)
@@ -92,6 +94,7 @@ func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
 			&trainingLog.ID,
 			&trainingLog.Content,
 			&trainingLog.Satisfaction,
+			&trainingLog.Weather,
 			&trainingLog.UserID,
 			&trainingLog.CreatedAt)
 		if err != nil {
