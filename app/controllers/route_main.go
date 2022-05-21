@@ -54,7 +54,8 @@ func trainingLogSave(w http.ResponseWriter, r *http.Request) {
 			log.Fatalln(err)
 		}
 		content := r.PostFormValue("content")
-		if err := user.CreateTrainingLog(content); err != nil {
+		satisfaction := r.PostFormValue("satisfaction")
+		if err := user.CreateTrainingLog(content, satisfaction); err != nil {
 			log.Fatalln(err)
 		}
 		http.Redirect(w, r, "/trainingLogs", 302)

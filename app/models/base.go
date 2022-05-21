@@ -41,6 +41,7 @@ func init() {
 	cmdT := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		content TEXT,
+		satisfaction TEXT,
 		user_id INTEGER,
 		created_at DATETIME)`, tableNameTrainingLog)
 

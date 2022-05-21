@@ -6,20 +6,22 @@ import (
 )
 
 type TrainingLog struct {
-	ID        int
-	Content   string
-	UserID    int
-	CreatedAt time.Time
+	ID           int
+	Content      string
+	Satisfaction string
+	UserID       int
+	CreatedAt    time.Time
 }
 
 // trainingLogsテーブルにトレーニングログを作成
-func (u *User) CreateTrainingLog(content string) (err error) {
+func (u *User) CreateTrainingLog(content string, satisfaction string) (err error) {
 	cmd := `insert into trainingLogs (
 		content,
+		satisfaction,
 		user_id,
-		created_at) values (?, ?, ?)`
+		created_at) values (?, ?, ?, ?)`
 
-	_, err = Db.Exec(cmd, content, u.ID, time.Now())
+	_, err = Db.Exec(cmd, content, satisfaction, u.ID, time.Now())
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -44,7 +46,7 @@ func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
 
 // トレーニングログ情報を取得（複数）
 func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
-	cmd := `select id, content, user_id, created_at from trainingLogs`
+	cmd := `select id, content, satisfaction, user_id, created_at from trainingLogs`
 	rows, err := Db.Query(cmd)
 	if err != nil {
 		log.Fatalln(err)
@@ -55,6 +57,7 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 		err = rows.Scan(
 			&trainingLog.ID,
 			&trainingLog.Content,
+			&trainingLog.Satisfaction,
 			&trainingLog.UserID,
 			&trainingLog.CreatedAt)
 		if err != nil {
@@ -71,7 +74,7 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 
 // ユーザーIDで絞り込んでトレーニングログ情報を取得
 func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
-	cmd := `select id, content, user_id, created_at from trainingLogs where user_id = ?`
+	cmd := `select id, content, satisfaction, user_id, created_at from trainingLogs where user_id = ?`
 	rows, err := Db.Query(cmd, u.ID)
 	if err != nil {
 		log.Fatalln(err)
@@ -82,6 +85,7 @@ func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
 		err = rows.Scan(
 			&trainingLog.ID,
 			&trainingLog.Content,
+			&trainingLog.Satisfaction,
 			&trainingLog.UserID,
 			&trainingLog.CreatedAt)
 		if err != nil {
