@@ -5,14 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <title>トレログ</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     {{template "navbar"}}
     <div class="container text-center">
+        <h1>トレログ</h1>
+        <div id="seagal">
+            <div>今日のセガール</div>
+            <div class="seagalImage"><img :src="getURL()"/></div>
+            <p>「{{`{{ seagalMessage() }}`}}」</p>
+        </div>
         {{template "content" .}}
     </div>
 </body>
+<script>
+    new Vue({
+        el: "#seagal",
+        data: {
+            messageList: [
+                "お疲れさん",
+                "調子はどうだ？",
+                "とんでもない記録はある日突然出るものだ",
+                "いいぞ！",
+                "その調子だ！",
+                "そういう日もある",
+                "もう少しで戦艦を爆発できるぞ！",
+                "沈黙シリーズに出てみないか？",
+                "体幹を強くしろ！",
+                "とんでもない！"
+            ]
+        },
+        methods: {
+            seagalMessage(){
+                let index = Math.floor(Math.random() * 10)
+                return this.messageList[index]
+            },
+            getURL() {
+                let firstPlace = Math.floor(Math.random() * 10)
+                let _firstPlace = String(firstPlace)
+                return `https://www.stevensegallery.com/25${_firstPlace}/200`
+            }
+        }
+    })
+</script>
 </html>
 {{end}}
