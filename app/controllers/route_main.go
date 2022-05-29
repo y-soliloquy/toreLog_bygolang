@@ -11,7 +11,7 @@ func top(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		generateHTML(w, "Hello", "layout", "navbar", "top")
 	} else {
-		http.Redirect(w, r, "/trainingLog", 302)
+		http.Redirect(w, r, "/trainingLogs", 302)
 	}
 
 }
