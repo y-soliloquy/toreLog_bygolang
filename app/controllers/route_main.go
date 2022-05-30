@@ -9,7 +9,7 @@ import (
 func top(w http.ResponseWriter, r *http.Request) {
 	_, err := session(w, r)
 	if err != nil {
-		generateHTML(w, "Hello", "layout", "navbar", "top")
+		generateHTML(w, nil, "layout", "navbar", "top")
 	} else {
 		http.Redirect(w, r, "/trainingLogs", 302)
 	}
