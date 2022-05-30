@@ -13,9 +13,7 @@
 <body>
     {{template "navbar"}}
     <div class="container text-center">
-        <h1>トレログ</h1>
-        <div id="seagal">
-            <div>今日のセガール</div>
+        <div id="seagal" style="margin-top: 20px;">
             <div class="seagalImage"><img :src="getURL()"/></div>
             <p>「{{`{{ seagalMessage() }}`}}」</p>
         </div>

@@ -9,9 +9,9 @@ import (
 func top(w http.ResponseWriter, r *http.Request) {
 	_, err := session(w, r)
 	if err != nil {
-		generateHTML(w, "Hello", "layout", "navbar", "top")
+		generateHTML(w, nil, "layout", "navbar", "top")
 	} else {
-		http.Redirect(w, r, "/trainingLog", 302)
+		http.Redirect(w, r, "/trainingLogs", 302)
 	}
 
 }
@@ -54,7 +54,9 @@ func trainingLogSave(w http.ResponseWriter, r *http.Request) {
 			log.Fatalln(err)
 		}
 		content := r.PostFormValue("content")
-		if err := user.CreateTrainingLog(content); err != nil {
+		satisfaction := r.PostFormValue("satisfaction")
+		weather := r.PostFormValue("weather")
+		if err := user.CreateTrainingLog(content, satisfaction, weather); err != nil {
 			log.Fatalln(err)
 		}
 		http.Redirect(w, r, "/trainingLogs", 302)
@@ -92,7 +94,9 @@ func trainingLogUpdate(w http.ResponseWriter, r *http.Request, id int) {
 			log.Fatalln(err)
 		}
 		content := r.PostFormValue("content")
-		t := &models.TrainingLog{ID: id, Content: content, UserID: user.ID}
+		satisfaction := r.PostFormValue("satisfaction")
+		weather := r.PostFormValue("weather")
+		t := &models.TrainingLog{ID: id, Content: content, Satisfaction: satisfaction, Weather: weather, UserID: user.ID}
 		if err := t.UpdateTrainingLog(); err != nil {
 			log.Fatalln(err)
 		}
