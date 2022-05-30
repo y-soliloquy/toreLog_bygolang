@@ -21,7 +21,7 @@ func (u *User) CreateTrainingLog(content string, satisfaction string, weather st
 		satisfaction,
 		weather,
 		user_id,
-		created_at) values (?, ?, ?, ?, ?)`
+		created_at) values ($1, $2, $3, $4, $5)`
 
 	// 書式指定
 	const format = "2006-01-02 15:04:05"
@@ -37,7 +37,7 @@ func (u *User) CreateTrainingLog(content string, satisfaction string, weather st
 
 // トレーニングログ情報を取得（単数）
 func GetTrainingLog(id int) (trainingLog TrainingLog, err error) {
-	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs where id = ?`
+	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs where id = $1`
 	trainingLog = TrainingLog{}
 	err = Db.QueryRow(cmd, id).Scan(
 		&trainingLog.ID,
@@ -82,7 +82,7 @@ func GetTrainingLogs() (trainingLogs []TrainingLog, err error) {
 
 // ユーザーIDで絞り込んでトレーニングログ情報を取得
 func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
-	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs where user_id = ?`
+	cmd := `select id, content, satisfaction, weather, user_id, created_at from trainingLogs where user_id = $1`
 	rows, err := Db.Query(cmd, u.ID)
 	if err != nil {
 		log.Fatalln(err)
@@ -110,7 +110,7 @@ func (u *User) GetTrainingLogsByUser() (trainingLogs []TrainingLog, err error) {
 
 // トレーニングログ情報を更新
 func (t *TrainingLog) UpdateTrainingLog() (err error) {
-	cmd := `update trainingLogs set content = ?, satisfaction = ?, weather = ?, user_id =? where id = ?`
+	cmd := `update trainingLogs set content = $1, satisfaction = $2, weather = $3, user_id =$4 where id = $5`
 	_, err = Db.Exec(cmd, t.Content, t.Satisfaction, t.Weather, t.UserID, t.ID)
 	if err != nil {
 		log.Fatalln(err)
@@ -121,7 +121,7 @@ func (t *TrainingLog) UpdateTrainingLog() (err error) {
 
 // トレーニングログ情報を削除
 func (t *TrainingLog) DeleteTrainingLog() (err error) {
-	cmd := `delete from trainingLogs where id = ?`
+	cmd := `delete from trainingLogs where id = $1`
 	_, err = Db.Exec(cmd, t.ID)
 	if err != nil {
 		log.Fatalln(err)
