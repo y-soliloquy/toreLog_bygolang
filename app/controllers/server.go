@@ -3,6 +3,7 @@ package controllers
 import (
 	"fmt"
 	"net/http"
+	"os"
 	"regexp"
 	"strconv"
 	"text/template"
@@ -69,5 +70,7 @@ func StartMainServer() (err error) {
 	http.HandleFunc("/trainingLogs/edit/", parseURL(trainingLogEdit))
 	http.HandleFunc("/trainingLogs/update/", parseURL(trainingLogUpdate))
 	http.HandleFunc("/trainingLogs/delete/", parseURL(trainingLogDelete))
-	return http.ListenAndServe(":"+config.Config.Port, nil)
+
+	port := os.Getenv("PORT")
+	return http.ListenAndServe(":"+port, nil)
 }
