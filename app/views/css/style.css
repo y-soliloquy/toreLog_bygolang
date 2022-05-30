@@ -1,0 +1,10 @@
+h1 {
+    margin: 0px !important;
+}
+.seagalImage {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}

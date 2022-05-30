@@ -1,0 +1,29 @@
+{{define "content"}}
+<form role="form" action="/trainingLogs/save" method="POST">
+    <div>ログ作成</div>
+    <div>
+        <textarea class="form-control" name="content" id="content" cols="30" rows="10" placeholder="ログを追加"></textarea>
+        <br/>
+        <select name="satisfaction" id="satisfaction">
+            <option value="未選択">満足度を選択</option>
+            <option value="大満足">かなり満足</option>
+            <option value="満足">満足</option>
+            <option value="普通">普通</option>
+            <option value="不満足">ダメ</option>
+            <option value="かなりダメ">かなりダメ</option>
+        </select>
+        <br/>
+        <select name="weather" id="weather">
+            <option value="未選択">天気を選択</option>
+            <option value="晴れ">晴れ</option>
+            <option value="曇り">曇り</option>
+            <option value="雨">雨</option>
+            <option value="雪">雪</option>
+        </select>
+        <br/>
+        <br >
+        <button style="border-radius: 20px; background-color: rgb(0, 153, 255); border-color: rgb(0, 153, 255); color: white; width: 100px; height: 50px; font-size: 20px;" type="submit">作成</button>
+        <!-- <button class="btn-lg btn-primary pull-right" type="submit">作成</button> -->
+    </div>
+</form>
+{{end}}

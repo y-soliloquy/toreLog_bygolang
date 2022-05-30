@@ -1,0 +1,1902 @@
+2022/05/08 18:00:29 main.go:16: test
+2022/05/08 20:00:30 users.go:34: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/05/08 20:31:15 users.go:61: near "where": syntax error
+2022/05/08 21:19:51 trainingLogs.go:24: 4 values for 3 columns
+2022/05/08 21:33:00 trainingLogs.go:42: no such column: if
+2022/05/11 17:19:57 main.go:98: no such column: emai
+2022/05/11 21:13:43 route_auth.go:40: sql: no rows in result set
+2022/05/11 21:15:07 route_auth.go:40: sql: no rows in result set
+2022/05/11 21:29:13 route_auth.go:51: sql: no rows in result set
+2022/05/12 00:17:21 server.go:3197: http: panic serving [::1]:51001: runtime error: index out of range [3] with length 3
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144198})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001880e0}, 0x140000a6200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001880e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001880e0}, 0x140000a6200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x1011d2650, 0x140001880e0}, 0x140000a6200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f040, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:21 server.go:3197: http: panic serving [::1]:51002: runtime error: index out of range [3] with length 3
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a108})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212000}, 0x14000200000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212000?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212000}, 0x14000200000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115530?}, {0x1011d2650, 0x14000212000}, 0x14000200000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f0e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:21 server.go:3197: http: panic serving [::1]:51011: runtime error: index out of range [3] with length 3
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140000b2150})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000bc2a0}, 0x140000a6300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000bc2a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000bc2a0}, 0x140000a6300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000949c0?}, {0x1011d2650, 0x140000bc2a0}, 0x140000a6300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee000, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:22 server.go:3197: http: panic serving [::1]:51017: runtime error: index out of range [3] with length 3
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140000b21b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000bc380}, 0x1400017c200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000bc380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000bc380}, 0x1400017c200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115740?}, {0x1011d2650, 0x140000bc380}, 0x1400017c200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f180, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:22 server.go:3197: http: panic serving [::1]:51018: runtime error: index out of range [3] with length 3
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a168})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002120e0}, 0x1400017c100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002120e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002120e0}, 0x1400017c100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001156e0?}, {0x1011d2650, 0x140002120e0}, 0x1400017c100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f220, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:22 server.go:3197: http: panic serving [::1]:51019: runtime error: index out of range [3] with length 3
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001441f8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001881c0}, 0x1400017c300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001881c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001881c0}, 0x1400017c300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115830?}, {0x1011d2650, 0x140001881c0}, 0x1400017c300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f2c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:25 server.go:3197: http: panic serving [::1]:51029: runtime error: index out of range [3] with length 3
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144258})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001882a0}, 0x1400017c400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001882a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001882a0}, 0x1400017c400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115950?}, {0x1011d2650, 0x140001882a0}, 0x1400017c400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002a8000, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:25 server.go:3197: http: panic serving [::1]:51030: runtime error: index out of range [3] with length 3
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140002c2048})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002ce000}, 0x140002ae100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002ce000?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002ce000}, 0x140002ae100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a40f0?}, {0x1011d2650, 0x140002ce000}, 0x140002ae100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002a80a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:25 server.go:3197: http: panic serving [::1]:51031: runtime error: index out of range [3] with length 3
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140002c20c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002ce0e0}, 0x140002ae200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002ce0e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002ce0e0}, 0x140002ae200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4270?}, {0x1011d2650, 0x140002ce0e0}, 0x140002ae200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002a8140, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:30 server.go:3197: http: panic serving [::1]:51053: runtime error: index out of range [3] with length 3
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001442b8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188380}, 0x140002ae300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188380}, 0x140002ae300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4390?}, {0x1011d2650, 0x14000188380}, 0x140002ae300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c000, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:30 server.go:3197: http: panic serving [::1]:51054: runtime error: index out of range [3] with length 3
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a1c8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002121c0}, 0x14000200200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002121c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002121c0}, 0x14000200200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e660?}, {0x1011d2650, 0x140002121c0}, 0x14000200200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c0a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:17:30 server.go:3197: http: panic serving [::1]:51059: runtime error: index out of range [3] with length 3
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a228})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002122a0}, 0x14000200300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002122a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002122a0}, 0x14000200300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e7e0?}, {0x1011d2650, 0x140002122a0}, 0x14000200300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c140, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:00 server.go:3197: http: panic serving [::1]:51180: runtime error: index out of range [3] with length 3
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a288})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212380}, 0x1400017c500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212380}, 0x1400017c500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115bc0?}, {0x1011d2650, 0x14000212380}, 0x1400017c500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c1e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:00 server.go:3197: http: panic serving [::1]:51181: runtime error: index out of range [3] with length 3
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a2e8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212460}, 0x14000200400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212460?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212460}, 0x14000200400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e9c0?}, {0x1011d2650, 0x14000212460}, 0x14000200400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c280, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:00 server.go:3197: http: panic serving [::1]:51182: runtime error: index out of range [3] with length 3
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a348})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212540}, 0x14000200500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212540?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212540}, 0x14000200500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007ec00?}, {0x1011d2650, 0x14000212540}, 0x14000200500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c320, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:56 server.go:3197: http: panic serving [::1]:51420: runtime error: index out of range [3] with length 3
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a3a8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212620}, 0x140002ae500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212620?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212620}, 0x140002ae500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4510?}, {0x1011d2650, 0x14000212620}, 0x140002ae500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002a81e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:56 server.go:3197: http: panic serving [::1]:51421: runtime error: index out of range [3] with length 3
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144318})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188460}, 0x140002ae400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188460?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188460}, 0x140002ae400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a44b0?}, {0x1011d2650, 0x14000188460}, 0x140002ae400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002a8280, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:56 server.go:3197: http: panic serving [::1]:51422: runtime error: index out of range [3] with length 3
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140002c2120})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002ce1c0}, 0x140002ae600)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002ce1c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002ce1c0}, 0x140002ae600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a45d0?}, {0x1011d2650, 0x140002ce1c0}, 0x140002ae600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002a8320, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:57 server.go:3197: http: panic serving [::1]:51429: runtime error: index out of range [3] with length 3
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140002c2180})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002ce2a0}, 0x14000200800)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002ce2a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002ce2a0}, 0x14000200800)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007ef00?}, {0x1011d2650, 0x140002ce2a0}, 0x14000200800)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c3c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:57 server.go:3197: http: panic serving [::1]:51430: runtime error: index out of range [3] with length 3
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144378})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188540}, 0x14000200700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188540?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188540}, 0x14000200700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007eea0?}, {0x1011d2650, 0x14000188540}, 0x14000200700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c460, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:57 server.go:3197: http: panic serving [::1]:51431: runtime error: index out of range [3] with length 3
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001443d8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188620}, 0x1400017c700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188620?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188620}, 0x1400017c700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115e00?}, {0x1011d2650, 0x14000188620}, 0x1400017c700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f360, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:58 server.go:3197: http: panic serving [::1]:51436: runtime error: index out of range [3] with length 3
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144438})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188700}, 0x1400017c800)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188700?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188700}, 0x1400017c800)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000115f20?}, {0x1011d2650, 0x14000188700}, 0x1400017c800)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee0a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:58 server.go:3197: http: panic serving [::1]:51437: runtime error: index out of range [3] with length 3
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140000b2210})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000bc460}, 0x140000a6400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000bc460?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000bc460}, 0x140000a6400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094cc0?}, {0x1011d2650, 0x140000bc460}, 0x140000a6400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee140, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:18:58 server.go:3197: http: panic serving [::1]:51438: runtime error: index out of range [3] with length 3
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140000b2270})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000bc540}, 0x140000a6500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000bc540?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000bc540}, 0x140000a6500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094e40?}, {0x1011d2650, 0x140000bc540}, 0x140000a6500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee1e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:02 server.go:3197: http: panic serving [::1]:51451: runtime error: index out of range [3] with length 3
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140000b22d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000bc620}, 0x140000a6600)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000bc620?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000bc620}, 0x140000a6600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094f60?}, {0x1011d2650, 0x140000bc620}, 0x140000a6600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c500, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:02 server.go:3197: http: panic serving [::1]:51452: runtime error: index out of range [3] with length 3
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a408})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212700}, 0x14000200900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212700?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212700}, 0x14000200900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f050?}, {0x1011d2650, 0x14000212700}, 0x14000200900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c5a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:02 server.go:3197: http: panic serving [::1]:51453: runtime error: index out of range [3] with length 3
+goroutine 73 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a468})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002127e0}, 0x14000200b00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002127e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002127e0}, 0x14000200b00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f1d0?}, {0x1011d2650, 0x140002127e0}, 0x14000200b00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c640, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:03 server.go:3197: http: panic serving [::1]:51459: runtime error: index out of range [3] with length 3
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a4c8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002128c0}, 0x14000200d00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002128c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002128c0}, 0x14000200d00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f2f0?}, {0x1011d2650, 0x140002128c0}, 0x14000200d00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f400, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:03 server.go:3197: http: panic serving [::1]:51460: runtime error: index out of range [3] with length 3
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144498})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001887e0}, 0x1400017c900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001887e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001887e0}, 0x1400017c900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fc120?}, {0x1011d2650, 0x140001887e0}, 0x1400017c900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f4a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:03 server.go:3197: http: panic serving [::1]:51461: runtime error: index out of range [3] with length 3
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140000b2330})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000bc700}, 0x140000a6800)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000bc700?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000bc700}, 0x140000a6800)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000950e0?}, {0x1011d2650, 0x140000bc700}, 0x140000a6800)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee280, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:03 server.go:3197: http: panic serving [::1]:51466: runtime error: index out of range [3] with length 3
+goroutine 76 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001444f8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001888c0}, 0x140000a6900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001888c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001888c0}, 0x140000a6900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000095200?}, {0x1011d2650, 0x140001888c0}, 0x140000a6900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c6e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:03 server.go:3197: http: panic serving [::1]:51467: runtime error: index out of range [3] with length 3
+goroutine 77 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a528})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140002129a0}, 0x14000200e00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140002129a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140002129a0}, 0x14000200e00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f4d0?}, {0x1011d2650, 0x140002129a0}, 0x14000200e00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c780, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:03 server.go:3197: http: panic serving [::1]:51468: runtime error: index out of range [3] with length 3
+goroutine 79 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a588})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212a80}, 0x14000201000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212a80?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212a80}, 0x14000201000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f650?}, {0x1011d2650, 0x14000212a80}, 0x14000201000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400024c820, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:04 server.go:3197: http: panic serving [::1]:51473: runtime error: index out of range [3] with length 3
+goroutine 98 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a5e8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000212b60}, 0x140000a6b00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000212b60?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000212b60}, 0x140000a6b00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000095380?}, {0x1011d2650, 0x14000212b60}, 0x140000a6b00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee320, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:04 server.go:3197: http: panic serving [::1]:51474: runtime error: index out of range [3] with length 3
+goroutine 99 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144558})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001889a0}, 0x140000a6a00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001889a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001889a0}, 0x140000a6a00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000095320?}, {0x1011d2650, 0x140001889a0}, 0x140000a6a00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000ee3c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:04 server.go:3197: http: panic serving [::1]:51475: runtime error: index out of range [3] with length 3
+goroutine 87 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001445b8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188a80}, 0x1400017cb00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188a80?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188a80}, 0x1400017cb00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fc420?}, {0x1011d2650, 0x14000188a80}, 0x1400017cb00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f540, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:07 server.go:3197: http: panic serving [::1]:51484: runtime error: index out of range [3] with length 3
+goroutine 116 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a0f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001880e0}, 0x140002ae100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x20?, {0x1011d2650?, 0x140001880e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001880e0}, 0x140002ae100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fc030?}, {0x1011d2650, 0x140001880e0}, 0x140002ae100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012e320, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:07 server.go:3197: http: panic serving [::1]:51485: runtime error: index out of range [3] with length 3
+goroutine 117 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001440c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0000}, 0x1400017c000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0000?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0000}, 0x1400017c000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e120?}, {0x1011d2650, 0x140000a0000}, 0x1400017c000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012ea00, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:07 server.go:3197: http: panic serving [::1]:51486: runtime error: index out of range [3] with length 3
+goroutine 119 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144120})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a00e0}, 0x1400017c200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a00e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a00e0}, 0x1400017c200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e2a0?}, {0x1011d2650, 0x140000a00e0}, 0x1400017c200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012eb40, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:08 server.go:3197: http: panic serving [::1]:51491: runtime error: index out of range [3] with length 3
+goroutine 90 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144180})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a01c0}, 0x140004b6100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a01c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a01c0}, 0x140004b6100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4150?}, {0x1011d2650, 0x140000a01c0}, 0x140004b6100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4000, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:08 server.go:3197: http: panic serving [::1]:51492: runtime error: index out of range [3] with length 3
+goroutine 91 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a150})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001881c0}, 0x140004b6000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001881c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001881c0}, 0x140004b6000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a40f0?}, {0x1011d2650, 0x140001881c0}, 0x140004b6000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b40a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:08 server.go:3197: http: panic serving [::1]:51493: runtime error: index out of range [3] with length 3
+goroutine 103 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a1b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140001882a0}, 0x140002ae300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140001882a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140001882a0}, 0x140002ae300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fc300?}, {0x1011d2650, 0x140001882a0}, 0x140002ae300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400045a000, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:09 server.go:3197: http: panic serving [::1]:51498: runtime error: index out of range [3] with length 3
+goroutine 92 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x1400001a210})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x14000188380}, 0x140002ae400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x14000188380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x14000188380}, 0x140002ae400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fc540?}, {0x1011d2650, 0x14000188380}, 0x140002ae400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4140, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:09 server.go:3197: http: panic serving [::1]:51499: runtime error: index out of range [3] with length 3
+goroutine 93 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c0048})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c8000}, 0x140004b6200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c8000?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c8000}, 0x140004b6200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4270?}, {0x1011d2650, 0x140004c8000}, 0x140004b6200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b41e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:09 server.go:3197: http: panic serving [::1]:51500: runtime error: index out of range [3] with length 3
+goroutine 95 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c00a8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c80e0}, 0x140004b6400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c80e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c80e0}, 0x140004b6400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a43f0?}, {0x1011d2650, 0x140004c80e0}, 0x140004b6400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4280, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:09 server.go:3197: http: panic serving [::1]:51501: runtime error: index out of range [3] with length 3
+goroutine 122 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001441e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a02a0}, 0x1400017c500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a02a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a02a0}, 0x1400017c500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e6f0?}, {0x1011d2650, 0x140000a02a0}, 0x1400017c500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012ec80, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:09 server.go:3197: http: panic serving [::1]:51502: runtime error: index out of range [3] with length 3
+goroutine 123 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c0108})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c81c0}, 0x1400017c400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c81c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c81c0}, 0x1400017c400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e690?}, {0x1011d2650, 0x140004c81c0}, 0x1400017c400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012ed20, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:09 server.go:3197: http: panic serving [::1]:51503: runtime error: index out of range [3] with length 3
+goroutine 125 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144240})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0380}, 0x1400017c700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0380}, 0x1400017c700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007e870?}, {0x1011d2650, 0x140000a0380}, 0x1400017c700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012edc0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:10 server.go:3197: http: panic serving [::1]:51510: runtime error: index out of range [3] with length 3
+goroutine 130 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001b2048})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x1400020e000}, 0x1400016c000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x1400020e000?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x1400020e000}, 0x1400016c000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x1011d2650, 0x1400020e000}, 0x1400016c000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4320, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:10 server.go:3197: http: panic serving [::1]:51511: runtime error: index out of range [3] with length 3
+goroutine 131 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c0168})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c82a0}, 0x140004b6700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c82a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c82a0}, 0x140004b6700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4750?}, {0x1011d2650, 0x140004c82a0}, 0x140004b6700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b43c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:10 server.go:3197: http: panic serving [::1]:51512: runtime error: index out of range [3] with length 3
+goroutine 133 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c01c8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c8380}, 0x140004b6900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c8380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c8380}, 0x140004b6900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4930?}, {0x1011d2650, 0x140004c8380}, 0x140004b6900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4460, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:10 server.go:3197: http: panic serving [::1]:51514: runtime error: index out of range [3] with length 3
+goroutine 127 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c0228})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c8460}, 0x140004b6b00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c8460?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c8460}, 0x140004b6b00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4a50?}, {0x1011d2650, 0x140004c8460}, 0x140004b6b00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012ef00, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:10 server.go:3197: http: panic serving [::1]:51515: runtime error: index out of range [3] with length 3
+goroutine 128 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001442a0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0460}, 0x1400017c900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0460?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0460}, 0x1400017c900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007ea50?}, {0x1011d2650, 0x140000a0460}, 0x1400017c900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f040, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:10 server.go:3197: http: panic serving [::1]:51516: runtime error: index out of range [3] with length 3
+goroutine 162 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144300})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0540}, 0x1400017cc00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0540?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0540}, 0x1400017cc00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007ebd0?}, {0x1011d2650, 0x140000a0540}, 0x1400017cc00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f0e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:15 server.go:3197: http: panic serving [::1]:51521: runtime error: index out of range [3] with length 3
+goroutine 147 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c02b8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c8620}, 0x1400016c600)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c8620?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c8620}, 0x1400016c600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007ecf0?}, {0x1011d2650, 0x140004c8620}, 0x1400016c600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000236000, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:15 server.go:3197: http: panic serving [::1]:51522: runtime error: index out of range [3] with length 3
+goroutine 148 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144438})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a07e0}, 0x1400016c200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a07e0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a07e0}, 0x1400016c200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094270?}, {0x1011d2650, 0x140000a07e0}, 0x1400016c200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002360a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:15 server.go:3197: http: panic serving [::1]:51539: runtime error: index out of range [3] with length 3
+goroutine 151 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001b2120})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x1400020e2a0}, 0x1400016c700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x1400020e2a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x1400020e2a0}, 0x1400016c700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000944b0?}, {0x1011d2650, 0x1400020e2a0}, 0x1400016c700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000236140, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:16 server.go:3197: http: panic serving [::1]:51544: runtime error: index out of range [3] with length 3
+goroutine 138 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144498})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a08c0}, 0x1400016c800)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a08c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a08c0}, 0x1400016c800)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000945d0?}, {0x1011d2650, 0x140000a08c0}, 0x1400016c800)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4500, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:16 server.go:3197: http: panic serving [::1]:51545: runtime error: index out of range [3] with length 3
+goroutine 139 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c0318})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c8700}, 0x140004b6f00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c8700?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c8700}, 0x140004b6f00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a4db0?}, {0x1011d2650, 0x140004c8700}, 0x140004b6f00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b45a0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:16 server.go:3197: http: panic serving [::1]:51546: runtime error: index out of range [3] with length 3
+goroutine 170 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001444f8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a09a0}, 0x1400017d000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a09a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a09a0}, 0x1400017d000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f9b0?}, {0x1011d2650, 0x140000a09a0}, 0x1400017d000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f180, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:18 server.go:3197: http: panic serving [::1]:51551: runtime error: index out of range [3] with length 3
+goroutine 153 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001b2180})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x1400020e380}, 0x140004b7100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x1400020e380?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x1400020e380}, 0x140004b7100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fad0?}, {0x1011d2650, 0x1400020e380}, 0x140004b7100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002361e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:18 server.go:3197: http: panic serving [::1]:51552: runtime error: index out of range [3] with length 3
+goroutine 154 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144558})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0a80}, 0x1400016c900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0a80?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0a80}, 0x1400016c900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000946f0?}, {0x1011d2650, 0x140000a0a80}, 0x1400016c900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000236280, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:18 server.go:3197: http: panic serving [::1]:51561: runtime error: index out of range [3] with length 3
+goroutine 173 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144618})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0b60}, 0x1400017d200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0b60?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0b60}, 0x1400017d200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fc50?}, {0x1011d2650, 0x140000a0b60}, 0x1400017d200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f220, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:19 server.go:3197: http: panic serving [::1]:51566: runtime error: index out of range [3] with length 3
+goroutine 142 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144678})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0c40}, 0x140004b7300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0c40?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0c40}, 0x140004b7300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a50e0?}, {0x1011d2650, 0x140000a0c40}, 0x140004b7300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4640, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:22 server.go:3197: http: panic serving [::1]:51567: runtime error: index out of range [3] with length 3
+goroutine 143 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001446d8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0d20}, 0x140004b7200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0d20?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0d20}, 0x140004b7200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a5080?}, {0x1011d2650, 0x140000a0d20}, 0x140004b7200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b46e0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:22 server.go:3197: http: panic serving [::1]:51576: runtime error: index out of range [3] with length 3
+goroutine 176 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001b21e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x1400020e460}, 0x1400017d300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x1400020e460?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x1400020e460}, 0x1400017d300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fe90?}, {0x1011d2650, 0x1400020e460}, 0x1400017d300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400012f2c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:22 server.go:3197: http: panic serving [::1]:51577: runtime error: index out of range [3] with length 3
+goroutine 157 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144738})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0e00}, 0x1400016ca00)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0e00?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0e00}, 0x1400016ca00)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000949c0?}, {0x1011d2650, 0x140000a0e00}, 0x1400016ca00)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000236320, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:27 server.go:3197: http: panic serving [::1]:51599: runtime error: index out of range [3] with length 3
+goroutine 144 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140001b2240})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x1400020e540}, 0x1400017d400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x1400020e540?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x1400020e540}, 0x1400017d400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000114e10?}, {0x1011d2650, 0x1400020e540}, 0x1400017d400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4780, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:27 server.go:3197: http: panic serving [::1]:51600: runtime error: index out of range [3] with length 3
+goroutine 145 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c03a8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c88c0}, 0x140004b7400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c88c0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c88c0}, 0x140004b7400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a5230?}, {0x1011d2650, 0x140004c88c0}, 0x140004b7400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b4820, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:27 server.go:3197: http: panic serving [::1]:51601: runtime error: index out of range [3] with length 3
+goroutine 195 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x140004c0408})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140004c89a0}, 0x140004b7500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140004c89a0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140004c89a0}, 0x140004b7500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a53b0?}, {0x1011d2650, 0x140004c89a0}, 0x140004b7500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140004b48c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:19:57 server.go:3197: http: panic serving [::1]:51724: runtime error: index out of range [3] with length 3
+goroutine 159 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1011b0da0, 0x14000144798})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x1011d2650, 0x140000a0ee0}, 0x140004b7600)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1011d2650?, 0x140000a0ee0?}, 0x100cc1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1011d2650, 0x140000a0ee0}, 0x140004b7600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002a54d0?}, {0x1011d2650, 0x140000a0ee0}, 0x140004b7600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002363c0, {0x1011d28d8, 0x140001153e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:37 server.go:3197: http: panic serving [::1]:51881: runtime error: index out of range [3] with length 3
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140001a20c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140001ac0e0}, 0x1400009a200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140001ac0e0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140001ac0e0}, 0x1400009a200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e030?}, {0x100ed2650, 0x140001ac0e0}, 0x1400009a200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000116fa0, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:37 server.go:3197: http: panic serving [::1]:51882: runtime error: index out of range [3] with length 3
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a258})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140001600e0}, 0x14000156100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140001600e0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140001600e0}, 0x14000156100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f530?}, {0x100ed2650, 0x140001600e0}, 0x14000156100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117040, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:37 server.go:3197: http: panic serving [::1]:51892: runtime error: index out of range [3] with length 3
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a2b8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140001601c0}, 0x14000156300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140001601c0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140001601c0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fa40?}, {0x100ed2650, 0x140001601c0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001170e0, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:38 server.go:3197: http: panic serving [::1]:51898: runtime error: index out of range [3] with length 3
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a318})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140001602a0}, 0x1400009a400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140001602a0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140001602a0}, 0x1400009a400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009c990?}, {0x100ed2650, 0x140001602a0}, 0x1400009a400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de000, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:38 server.go:3197: http: panic serving [::1]:51899: runtime error: index out of range [3] with length 3
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140001a2120})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140001ac1c0}, 0x1400009a300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140001ac1c0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140001ac1c0}, 0x1400009a300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009c930?}, {0x100ed2650, 0x140001ac1c0}, 0x1400009a300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de0a0, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:38 server.go:3197: http: panic serving [::1]:51900: runtime error: index out of range [3] with length 3
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140000aa150})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140000ae2a0}, 0x1400009a500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140000ae2a0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140000ae2a0}, 0x1400009a500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009ca80?}, {0x100ed2650, 0x140000ae2a0}, 0x1400009a500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de140, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:43 server.go:3197: http: panic serving [::1]:51922: runtime error: index out of range [3] with length 3
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140000aa1b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140000ae380}, 0x1400009a700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140000ae380?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140000ae380}, 0x1400009a700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009cba0?}, {0x100ed2650, 0x140000ae380}, 0x1400009a700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117180, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:43 server.go:3197: http: panic serving [::1]:51923: runtime error: index out of range [3] with length 3
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140000aa210})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140000ae460}, 0x14000156400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140000ae460?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140000ae460}, 0x14000156400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fd70?}, {0x100ed2650, 0x140000ae460}, 0x14000156400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117220, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:20:43 server.go:3197: http: panic serving [::1]:51924: runtime error: index out of range [3] with length 3
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140002aa048})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140002b6000}, 0x1400029c000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140002b6000?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140002b6000}, 0x1400029c000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000284090?}, {0x100ed2650, 0x140002b6000}, 0x1400029c000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000288000, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:21:13 server.go:3197: http: panic serving [::1]:52049: runtime error: index out of range [3] with length 3
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140002aa0c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140002b60e0}, 0x1400029c100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140002b60e0?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140002b60e0}, 0x1400029c100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002841b0?}, {0x100ed2650, 0x140002b60e0}, 0x1400029c100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001172c0, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:21:13 server.go:3197: http: panic serving [::1]:52050: runtime error: index out of range [3] with length 3
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a378})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x14000160380}, 0x14000156500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x14000160380?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x14000160380}, 0x14000156500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fe90?}, {0x100ed2650, 0x14000160380}, 0x14000156500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117360, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:21:13 server.go:3197: http: panic serving [::1]:52051: runtime error: index out of range [3] with length 3
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a3d8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x14000160460}, 0x14000156600)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x14000160460?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x14000160460}, 0x14000156600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000174030?}, {0x100ed2650, 0x14000160460}, 0x14000156600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117400, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:21:48 server.go:3197: http: panic serving [::1]:52199: runtime error: index out of range [3] with length 3
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a438})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x14000160540}, 0x14000156700)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x14000160540?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x14000160540}, 0x14000156700)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000174150?}, {0x100ed2650, 0x14000160540}, 0x14000156700)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de1e0, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:21:48 server.go:3197: http: panic serving [::1]:52200: runtime error: index out of range [3] with length 3
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140000aa270})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140000ae540}, 0x1400009a800)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140000ae540?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140000ae540}, 0x1400009a800)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009cea0?}, {0x100ed2650, 0x140000ae540}, 0x1400009a800)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de280, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:21:48 server.go:3197: http: panic serving [::1]:52201: runtime error: index out of range [3] with length 3
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x140000aa2d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x140000ae620}, 0x1400009a900)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x140000ae620?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x140000ae620}, 0x1400009a900)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009d020?}, {0x100ed2650, 0x140000ae620}, 0x1400009a900)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de320, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:22:48 server.go:3197: http: panic serving [::1]:52447: runtime error: index out of range [3] with length 3
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x100eb0da0, 0x1400001a498})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x100ed2650, 0x14000160620}, 0x1400029c200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x100ed2650?, 0x14000160620?}, 0x1009c1e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ed2650, 0x14000160620}, 0x1400029c200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140002842d0?}, {0x100ed2650, 0x14000160620}, 0x1400029c200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000de3c0, {0x100ed28d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:12 server.go:3197: http: panic serving [::1]:53803: runtime error: index out of range [3] with length 3
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x140001ae0c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140001b80e0}, 0x14000156300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140001b80e0?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140001b80e0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e030?}, {0x103136650, 0x140001b80e0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117040, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:12 server.go:3197: http: panic serving [::1]:53804: runtime error: index out of range [3] with length 3
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x140000aa138})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140000ae1c0}, 0x14000156100)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140000ae1c0?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140000ae1c0}, 0x14000156100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f530?}, {0x103136650, 0x140000ae1c0}, 0x14000156100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001170e0, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:12 server.go:3197: http: panic serving [::1]:53809: runtime error: index out of range [3] with length 3
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x140000aa198})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140000ae2a0}, 0x1400009a200)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140000ae2a0?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140000ae2a0}, 0x1400009a200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009cba0?}, {0x103136650, 0x140000ae2a0}, 0x1400009a200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000f4000, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:13 server.go:3197: http: panic serving [::1]:53814: runtime error: index out of range [3] with length 3
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x140001ae120})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140001b81c0}, 0x1400009a300)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140001b81c0?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140001b81c0}, 0x1400009a300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009ccc0?}, {0x103136650, 0x140001b81c0}, 0x1400009a300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117180, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:13 server.go:3197: http: panic serving [::1]:53815: runtime error: index out of range [3] with length 3
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x140000aa1f8})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140000ae380}, 0x14000156400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140000ae380?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140000ae380}, 0x14000156400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f740?}, {0x103136650, 0x140000ae380}, 0x14000156400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117220, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:13 server.go:3197: http: panic serving [::1]:53816: runtime error: index out of range [3] with length 3
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x1400025a048})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x14000268000}, 0x1400024c000)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x14000268000?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x14000268000}, 0x1400024c000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000234090?}, {0x103136650, 0x14000268000}, 0x1400024c000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000238000, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:18 server.go:3197: http: panic serving [::1]:53838: runtime error: index out of range [3] with length 3
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x1400025a0c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140002680e0}, 0x1400009a500)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140002680e0?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140002680e0}, 0x1400009a500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009cf00?}, {0x103136650, 0x140002680e0}, 0x1400009a500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000f40a0, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:18 server.go:3197: http: panic serving [::1]:53839: runtime error: index out of range [3] with length 3
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x1400025a120})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140002681c0}, 0x1400009a400)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140002681c0?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140002681c0}, 0x1400009a400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009cea0?}, {0x103136650, 0x140002681c0}, 0x1400009a400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000f4140, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/12 00:28:18 server.go:3197: http: panic serving [::1]:53840: runtime error: index out of range [3] with length 3
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x103114da0, 0x140000aa258})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+torelog_bygolang/app/controllers.parseURL.func1({0x103136650, 0x140000ae460}, 0x1400009a600)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:47 +0x100
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x103136650?, 0x140000ae460?}, 0x102c25e80?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103136650, 0x140000ae460}, 0x1400009a600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009cff0?}, {0x103136650, 0x140000ae460}, 0x1400009a600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000f41e0, {0x1031368d8, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/21 22:33:55 route_auth.go:51: sql: no rows in result set
+2022/05/21 23:05:01 route_auth.go:51: sql: no rows in result set
+2022/05/21 23:05:14 route_auth.go:51: sql: no rows in result set
+2022/05/22 01:04:41 trainingLogs.go:26: table trainingLogs has no column named satisfaction
+2022/05/22 01:06:13 trainingLogs.go:26: table trainingLogs has no column named satisfaction
+2022/05/22 01:07:27 route_auth.go:51: sql: no rows in result set
+2022/05/22 01:08:15 trainingLogs.go:26: not enough args to execute query: want 4 got 3
+2022/05/22 01:47:58 server.go:3197: http: panic serving [::1]:52620: template: index.html:9: unexpected "(" in operand
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000903f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140000b2000}, {0x104ace780, 0x140000be200}, {0x140001197d0?, 0x3, 0x140001877c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140000b2000}, 0x14000187a3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140000b2000?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140000b2000}, 0x14000098000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e030?}, {0x104aea680, 0x140000b2000}, 0x14000098000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117040, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:58 server.go:3197: http: panic serving [::1]:52621: template: index.html:9: unexpected "(" in operand
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140001923e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001ac000}, {0x104ace780, 0x140001b6200}, {0x1400011f7d0?, 0x3, 0x1400011f7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001ac000}, 0x1400011fa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001ac000?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001ac000}, 0x14000156200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f530?}, {0x104aea680, 0x140001ac000}, 0x14000156200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001170e0, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:58 server.go:3197: http: panic serving [::1]:52622: template: index.html:9: unexpected "(" in operand
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000134c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001600e0}, {0x104ace780, 0x1400015e700}, {0x140001757d0?, 0x3, 0x1400005a7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001600e0}, 0x1400005aa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001600e0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001600e0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f650?}, {0x104aea680, 0x140001600e0}, 0x14000156300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117180, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:59 server.go:3197: http: panic serving [::1]:52628: template: index.html:9: unexpected "(" in operand
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x1400029e3d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140002a2000}, {0x104ace780, 0x140002ae200}, {0x140001717d0?, 0x3, 0x1400005f7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140002a2000}, 0x1400005fa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140002a2000?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140002a2000}, 0x14000156600)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400020c360?}, {0x104aea680, 0x140002a2000}, 0x14000156600)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117220, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:59 server.go:3197: http: panic serving [::1]:52629: template: index.html:9: unexpected "(" in operand
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140001927d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001ac0e0}, {0x104ace780, 0x140001b6680}, {0x1400011f7d0?, 0x3, 0x1400005a7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001ac0e0}, 0x1400005aa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001ac0e0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001ac0e0}, 0x14000156500)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400020c300?}, {0x104aea680, 0x140001ac0e0}, 0x14000156500)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001172c0, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:47:59 server.go:3197: http: panic serving [::1]:52630: template: index.html:9: unexpected "(" in operand
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000904b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140001ac1c0}, {0x104ace780, 0x140001b6b80}, {0x1400011f7d0?, 0x3, 0x1400005a7c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140001ac1c0}, 0x1400005aa3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140001ac1c0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140001ac1c0}, 0x14000302000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018f7d0?}, {0x104aea680, 0x140001ac1c0}, 0x14000302000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000300000, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 01:48:04 server.go:3197: http: panic serving [::1]:52652: template: index.html:9: unexpected "(" in operand
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x104a8f720, 0x140000908b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+torelog_bygolang/app/controllers.generateHTML({0x104aea680?, 0x140000b20e0}, {0x104ace780, 0x140000be800}, {0x140001197d0?, 0x3, 0x140001877c8?})
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/server.go:20 +0xd0
+torelog_bygolang/app/controllers.index({0x104aea680, 0x140000b20e0}, 0x14000187a3b?)
+	/Users/yukiunno/go/src/torelog_bygolang/app/controllers/route_main.go:30 +0x210
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104aea680?, 0x140000b20e0?}, 0x1045d9780?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aea680, 0x140000b20e0}, 0x14000098100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000096de0?}, {0x104aea680, 0x140000b20e0}, 0x14000098100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002e6000, {0x104aea908, 0x1400007f3e0})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/22 03:39:00 trainingLogs.go:31: table trainingLogs has no column named weather
+2022/05/22 03:39:58 route_auth.go:51: sql: no rows in result set
+2022/05/22 03:40:50 trainingLogs.go:31: table trainingLogs has no column named weather
+2022/05/22 03:43:02 trainingLogs.go:31: table trainingLogs has no column named weather
